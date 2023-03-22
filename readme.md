@@ -31,6 +31,59 @@
 
 [DOCS](https://svelte.dev/docs)
 
+
+___
+
+COURSE VERSION : https://github.com/alialaa/svelte-course.git
+
+```
+git clone https://github.com/alialaa/svelte-course.git
+
+cd svelte-course
+rm -rf .git
+
+cd svelte-course
+npm install
+npm run dev
+
+```
+
+___
+
+
+___
+FOR NEW SVELTE ( DONT USE )
+
+```sh
+
+npm create svelte@latest svelte-course-new
+
+create-svelte@3.2.0
+Ok to proceed? (y) y
+
+Which Svelte app template?
+│  ●   Skeleton project (Barebones scaffolding for your new SvelteKit app)
+
+Add type checking with TypeScript?
+│  ●  No
+
+
+Select additional options (use arrow keys/space bar)
+│  none
+
+cd svelte-course
+npm install
+npm run dev
+```
+
+___
+
+
+
+
+
+
+
 </details>
 
 
