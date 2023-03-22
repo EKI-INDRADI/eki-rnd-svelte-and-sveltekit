@@ -88,6 +88,27 @@ ___
 
 
 
+
+<details>
+  <summary>002</summary>
+
+```sh
+
+npm run dev
+
+```
+
+
+```sh
+
+npm run build
+
+```
+
+</details>
+
+
+
 next video 5 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
