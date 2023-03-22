@@ -27,7 +27,7 @@
 
 
 <details>
-  <summary>GET STARTED</summary>
+  <summary>GETTING STARTED</summary>
 
 [DOCS](https://svelte.dev/docs)
 
