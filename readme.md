@@ -36,9 +36,8 @@
 
 
 
-[1](https://www.udemy.com/course/svelte-and-sveltekit/learn/lecture/34288622#overview)
 
-next video 4 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
+next video 5 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
 ## EKI INDRADI
