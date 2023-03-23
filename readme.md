@@ -109,10 +109,31 @@ npm run build
 
 <details>
   <summary>003</summary>
+
   delete app.css
+
   clear source App.svelte
+
   clear source main.js
+  
 </details
+
+
+
+<details>
+  <summary>005</summary>
+
+
+```sh
+
+npm run build -- --minify=false
+
+```
+  
+</details
+
+
+
 
 
 
