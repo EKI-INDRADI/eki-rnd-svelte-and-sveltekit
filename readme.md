@@ -133,7 +133,7 @@ npm run build -- --minify=false
 </details>
 
 
-next STAGE 3 video 12 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
+next STAGE 3 video 13 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
 ## EKI INDRADI
