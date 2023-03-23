@@ -116,7 +116,7 @@ npm run build
 
   clear source main.js
   
-</details
+</details>
 
 
 
