@@ -130,7 +130,7 @@ npm run build -- --minify=false
 
 ```
   
-</details
+</details>
 
 
 
