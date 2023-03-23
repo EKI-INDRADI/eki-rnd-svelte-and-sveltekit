@@ -130,7 +130,7 @@ npm run build -- --minify=false
 
 ```
   
-</details
+</details>
 
 
 
@@ -138,7 +138,7 @@ npm run build -- --minify=false
 
 
 
-next video 7 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
+next video 9 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
 ## EKI INDRADI
