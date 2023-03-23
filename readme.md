@@ -107,9 +107,17 @@ npm run build
 
 </details>
 
+<details>
+  <summary>003</summary>
+  delete app.css
+  clear source App.svelte
+  clear source main.js
+</details
 
 
-next video 5 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
+
+
+next video 7 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
 ## EKI INDRADI
