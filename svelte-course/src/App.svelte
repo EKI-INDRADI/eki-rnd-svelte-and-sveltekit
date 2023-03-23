@@ -1,20 +1,25 @@
 <script>
-    import svelteLogo from './assets/svelte.svg'
-    import Counter from './lib/Counter.svelte'
+	let name = 'Svelete';
+    let src="http://picsum.com/200/200" //example random photo
+    let string ='some <string>string</string> with html.'
 </script>
 
-<main>
-    <div>
-        <a href="https://vitejs.dev" target="blank">
-            <img src="/vite.svg" class="logo" alt="vite logo" />
-        </a>
-        <a href="https://svelte.dev" target="_blank">
-            <img src={svelteLogo} class="logo svelte" alt="Svelte logo" />
-        </a>
-    </div>
-    <h1>Vite + Svelte</h1>
+<!-- <img src="http://picsum.com/200/200"/>  example random photo -->
+<!-- == -->
+<!-- <img src={src}/> -->
+<!-- == -->
+<!-- <img {src} alt="Some Text {name}"/> -->
+<!-- == -->
+<!-- <img {src} alt={`Some Text ${name}`}/> -->
+<img {src} alt="Some Text {name}"/>
+<h1>Hello {name.toLowerCase()}!</h1>
+<!-- <p>{string}</p> html not work -->
+<p>{@html string}</p>
 
-    <div class="card">
-        <Counter />
-    </div>
-</main>
+
+
+<style>
+	h1 {
+		color: red;
+	}
+</style>
