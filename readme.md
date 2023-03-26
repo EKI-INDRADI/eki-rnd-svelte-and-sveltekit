@@ -169,6 +169,7 @@ https://svelte-icons-explorer.vercel.app/ -> Font Awasome -> click Icon -> paste
 
 https://github.com/alialaa/svelte-course/blob/named-slots/package.json
 
+for getstarted from https://github.com/alialaa/svelte-course
 
 ```sh
 
