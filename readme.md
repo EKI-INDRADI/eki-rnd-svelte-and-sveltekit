@@ -133,6 +133,35 @@ npm run build -- --minify=false
 </details>
 
 
+<details>
+  <summary>012</summary>
+
+https://github.com/sveltejs/svelte-preprocess
+
+https://github.com/alialaa/svelte-course/blob/adding-scss/package.json
+
+
+for getstarted from 
+
+```sh
+
+npm i -D svelte-preprocess@4.10.7
+npm i -D sass@1.55.0
+
+```
+
+for lastest :
+
+```sh
+
+npm i -D svelte-preprocess
+npm i -D sass
+
+```
+
+  </details>
+
+
 next STAGE 3 video 13 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
