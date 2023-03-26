@@ -9,6 +9,8 @@
 
 	export let bgColor = 'inherit';  // 6  
 	export let textColor = 'inherit'; // 6
+	// <!--8-->
+	// console.log($$slots);
 </script>
 
 <!-- <button>{title}</button> -->
@@ -50,18 +52,84 @@ class:shadow>
 
 
 <!--5-->
-<button 
+<!-- <button 
 style:--buttonBgColor={bgColor}
 style:--buttonTextColor={textColor}
 class:size-lg={size == 'large'} 
 class:size-sm={size == 'small'} 
 class:shadow>
 	<slot>Fallback</slot>
+</button> -->
+
+
+<!--7-->
+<!-- <button 
+style:--buttonBgColor={bgColor}
+style:--buttonTextColor={textColor}
+class:size-lg={size == 'large'} 
+class:size-sm={size == 'small'} 
+class:shadow>
+
+	<div class="left-content">left</div>
+	<slot>Fallback</slot>
+</button> -->
+
+
+<!--8-->
+<!-- <button 
+style:--buttonBgColor={bgColor}
+style:--buttonTextColor={textColor}
+class:size-lg={size == 'large'} 
+class:size-sm={size == 'small'} 
+class:shadow>
+
+	<div class="left-content">
+		<slot name="leftContent" />
+	</div>
+
+	<slot>Fallback</slot>
+</button> -->
+
+
+<!--9-->
+<!-- <button 
+style:--buttonBgColor={bgColor}
+style:--buttonTextColor={textColor}
+class:size-lg={size == 'large'} 
+class:size-sm={size == 'small'} 
+class:shadow> -->
+
+<!-- {#if $$slots.leftContent} -->
+<!-- remove extra space if left content undefined -->
+	<!-- <div class="left-content">
+		<slot name="leftContent" />
+	</div>
+{/if} -->
+
+	<!-- <slot>Fallback</slot>
+</button> -->
+
+
+
+
+<!--10-->
+<button 
+style:--buttonBgColor={bgColor}
+style:--buttonTextColor={textColor}
+class:size-lg={size == 'large'} 
+class:size-sm={size == 'small'} 
+class:has-left={$$slots.leftContent}
+class:shadow>
+
+{#if $$slots.leftContent}
+<!-- remove extra space if left content undefined -->
+	<div class="left-content">
+		<slot name="leftContent" />
+	</div>
+{/if}
+
+	<slot>Fallback</slot>
 </button>
-
-
-
-
 
 
 
@@ -161,7 +229,7 @@ class:shadow>
 
 
 <!--5-->
-<style lang="scss">
+<!-- <style lang="scss">
 	//style error but still working, because eki-rnd-svelte-and-sveltekit\svelte-course\svelte.config.js
 	button {
 		border: none;
@@ -171,6 +239,41 @@ class:shadow>
 		font-weight: bold;
 		border-radius: 5px;
 		cursor: pointer;
+		&:hover {
+			background-image: linear-gradient(rgba(0,0,0,0.4) 0 0);
+		}
+		&:active {
+			background-image: linear-gradient(rgba(255,255,255,0.1) 0 0);
+		}
+		&.size-sm {
+			padding: 15px 20px;
+		}
+		&.size-lg {
+			padding: 20px 25px;
+		}
+		&.shadow {
+			 box-shadow: 0 0 10px rgba(1,1,1,0.3);
+		}
+	}
+</style> -->
+
+
+<!--7-->
+<style lang="scss">
+	//style error but still working, because eki-rnd-svelte-and-sveltekit\svelte-course\svelte.config.js
+	button {
+		display: flex;
+		align-items: center;
+		border: none;
+		background-color: var(--buttonBgColor);
+		color: var(--buttonTextColor);
+		padding: 15px 20px;
+		font-weight: bold;
+		border-radius: 5px;
+		cursor: pointer;
+		.left-content {
+			margin-right: 10px;
+		}
 		&:hover {
 			background-image: linear-gradient(rgba(0,0,0,0.4) 0 0);
 		}
