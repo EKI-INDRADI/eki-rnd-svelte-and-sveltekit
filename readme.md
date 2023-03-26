@@ -165,7 +165,7 @@ npm i -D sass
 
 https://github.com/Introvertuous/svelte-icons
 
-https://svelte-icons-explorer.vercel.app/ -> Font Awasome
+https://svelte-icons-explorer.vercel.app/ -> Font Awasome -> click Icon -> paste code import
 
 https://github.com/alialaa/svelte-course/blob/named-slots/package.json
 
