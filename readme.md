@@ -138,10 +138,7 @@ npm run build -- --minify=false
 
 https://github.com/sveltejs/svelte-preprocess
 
-https://github.com/alialaa/svelte-course/blob/adding-scss/package.json
-
-
-for getstarted from 
+for getstarted from https://github.com/alialaa/svelte-course
 
 ```sh
 
