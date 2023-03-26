@@ -13,8 +13,13 @@
 
 
 <!-- eki-rnd-svelte-and-sveltekit\svelte-course\src\lib\Button.svelte -->
-<Button size="small" shadow>Button Text</Button>
+<!-- <Button size="small" shadow>Button Text</Button> -->
 <!-- <Button size="large" shadow>Button Text</Button> -->
+<!-- <Button size="small" shadow bgColor="red" textColor="white">Button Text</Button> -->
+<!-- <Button size="small" shadow bgColor="red" textColor="blue">Button Text</Button> -->
+<!-- <Button size="small" shadow>Button Text</Button> -->
+<!-- <Button size="small" shadow bgColor="red" textColor="blue">Button Text</Button> -->
+<Button size="small" shadow>Button Text</Button>
 
 <style>
 
