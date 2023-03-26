@@ -159,7 +159,38 @@ npm i -D sass
   </details>
 
 
-next STAGE 3 video 13 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
+
+<details>
+<summary>015</summary>
+
+https://github.com/Introvertuous/svelte-icons
+
+https://svelte-icons-explorer.vercel.app/ -> Font Awasome -> click Icon -> paste code import
+
+https://github.com/alialaa/svelte-course/blob/named-slots/package.json
+
+for getstarted from https://github.com/alialaa/svelte-course
+
+```sh
+
+npm i svelte-icons@2.1.0
+
+```
+
+for lastest :
+
+```sh
+
+npm i svelte-icons
+
+
+```
+
+</details>
+
+
+
+next STAGE 3 video 17 [00:00](https://www.udemy.com/course/svelte-and-sveltekit)  
 
 
 ## EKI INDRADI
