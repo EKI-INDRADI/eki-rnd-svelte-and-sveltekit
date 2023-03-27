@@ -1,6 +1,7 @@
 <script>
 	import Button from './lib/Button.svelte';
 	import FaAngellist from 'svelte-icons/fa/FaAngellist.svelte'; //https://svelte-icons-explorer.vercel.app/ -> Font Awesome
+	import FaAllergies from 'svelte-icons/fa/FaAllergies.svelte';
 </script>
 
 <!-- <script>
@@ -42,9 +43,47 @@
 	<span style:width="20px" slot="leftContent"><FaAngellist /></span>
 	Button Text
 </Button> -->
-
+<!-- 
 <Button size="small" shadow>
 	<div style:width="20px" slot="leftContent"><FaAngellist /></div>
+	Button Text
+</Button> -->
+
+<!-- <Button let:x={x} size="small" shadow>
+	<div style:width="20px" slot="leftContent"><FaAngellist /></div>
+	Button Text {x}
+</Button> -->
+
+<!--same : -->
+
+<!-- <Button let:x size="small" shadow>
+	<div style:width="20px" slot="leftContent"><FaAngellist /></div>
+	Button Text {x}
+</Button> -->
+
+<!-- <Button let:isLeftHovered size="small" shadow>
+	<div style:width="20px" slot="leftContent">
+		{#if isLeftHovered}
+			<FaAngellist />
+		{:else}
+			<FaAllergies />
+		{/if}
+	</div>
+	Button Text
+</Button> -->
+
+
+
+
+<Button  let:isLeftHovered size="small" shadow>
+	<div style:width="20px" slot="leftContent" let:x>
+		{x}
+		{#if isLeftHovered}
+			<FaAngellist />
+		{:else}
+			<FaAllergies />
+		{/if}
+	</div>
 	Button Text
 </Button>
 

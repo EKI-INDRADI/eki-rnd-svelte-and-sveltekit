@@ -4,17 +4,35 @@
 <script>
 	export let size = 'small';
 	export let shadow = false;
+	// export let bgColor = undefined;  // 5
+	// export let textColor = undefined; // 5
+
+	export let bgColor = 'inherit'; // 6
+	export let textColor = 'inherit'; // 6
+	// <!--8-->
+	// console.log($$slots);
+
+	let isLeftHovered;
+</script>
+
+<!-- 
+<script>
+	export let size = 'small';
+	export let shadow = false;
 	// export let bgColor = undefined;  // 5   
 	// export let textColor = undefined; // 5
 
 	export let bgColor = 'inherit';  // 6  
 	export let textColor = 'inherit'; // 6
-	// <!--8-->
+
 	// console.log($$slots);
-</script>
+
+</script> -->
 
 <!-- <button>{title}</button> -->
+
 <!-- <button>{children}</button> -->
+
 <!-- <button><slot>Fallback</slot></button> -->
 
 <!--4-->
@@ -29,7 +47,6 @@
 <!-- <button class:size-lg={size == 'large'} class:size-sm={size == 'small'} class:shadow>
 	<slot>Fallback</slot>
 </button> -->
-
 
 <!-- <button 
 style="background-color: {bgColor}; color : {textColor}"   
@@ -49,8 +66,6 @@ class:shadow>
 	<slot>Fallback</slot>
 </button> -->
 
-
-
 <!--5-->
 <!-- <button 
 style:--buttonBgColor={bgColor}
@@ -60,7 +75,6 @@ class:size-sm={size == 'small'}
 class:shadow>
 	<slot>Fallback</slot>
 </button> -->
-
 
 <!--7-->
 <!-- <button 
@@ -73,7 +87,6 @@ class:shadow>
 	<div class="left-content">left</div>
 	<slot>Fallback</slot>
 </button> -->
-
 
 <!--8-->
 <!-- <button 
@@ -90,7 +103,6 @@ class:shadow>
 	<slot>Fallback</slot>
 </button> -->
 
-
 <!--9-->
 <!-- <button 
 style:--buttonBgColor={bgColor}
@@ -101,19 +113,16 @@ class:shadow> -->
 
 <!-- {#if $$slots.leftContent} -->
 <!-- remove extra space if left content undefined -->
-	<!-- <div class="left-content">
+<!-- <div class="left-content">
 		<slot name="leftContent" />
 	</div>
 {/if} -->
 
-	<!-- <slot>Fallback</slot>
+<!-- <slot>Fallback</slot>
 </button> -->
 
-
-
-
 <!--10-->
-<button 
+<!-- <button 
 style:--buttonBgColor={bgColor}
 style:--buttonTextColor={textColor}
 class:size-lg={size == 'large'} 
@@ -121,18 +130,42 @@ class:size-sm={size == 'small'}
 class:has-left={$$slots.leftContent}
 class:shadow>
 
-{#if $$slots.leftContent}
+{#if $$slots.leftContent} -->
 <!-- remove extra space if left content undefined -->
-	<div class="left-content">
+<!-- <div class="left-content">
 		<slot name="leftContent" />
 	</div>
 {/if}
 
 	<slot>Fallback</slot>
 </button>
+ -->
 
+<!--11-->
+<button
+	style:--buttonBgColor={bgColor}
+	style:--buttonTextColor={textColor}
+	class:size-lg={size == 'large'}
+	class:size-sm={size == 'small'}
+	class:has-left={$$slots.leftContent}
+	class:shadow
+>
+	{#if $$slots.leftContent}
+		<!-- remove extra space if left content undefined -->
+		<div
+			class="left-content"
+			on:mouseenter={() => (isLeftHovered = true)}
+			on:mouseleave={() => (isLeftHovered = false)}
+		>
+			<!-- <slot name="leftContent" /> -->
+			<slot name="leftContent" x="y" />
+		</div>
+	{/if}
 
+	<!-- <slot x="y">Fallback</slot> -->
 
+	<slot {isLeftHovered}>Fallback</slot>
+</button>
 
 <!-- <style>
     button {
@@ -226,8 +259,6 @@ class:shadow>
 	}
 </style> -->
 
-
-
 <!--5-->
 <!-- <style lang="scss">
 	//style error but still working, because eki-rnd-svelte-and-sveltekit\svelte-course\svelte.config.js
@@ -257,7 +288,6 @@ class:shadow>
 	}
 </style> -->
 
-
 <!--7-->
 <style lang="scss">
 	//style error but still working, because eki-rnd-svelte-and-sveltekit\svelte-course\svelte.config.js
@@ -275,10 +305,10 @@ class:shadow>
 			margin-right: 10px;
 		}
 		&:hover {
-			background-image: linear-gradient(rgba(0,0,0,0.4) 0 0);
+			background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 		}
 		&:active {
-			background-image: linear-gradient(rgba(255,255,255,0.1) 0 0);
+			background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0 0);
 		}
 		&.size-sm {
 			padding: 15px 20px;
@@ -287,7 +317,7 @@ class:shadow>
 			padding: 20px 25px;
 		}
 		&.shadow {
-			 box-shadow: 0 0 10px rgba(1,1,1,0.3);
+			box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
 		}
 	}
 </style>
